@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Align | Sign In</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/fav-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="preload" href="../styles/app-prod.css" as="style" />
+    <link rel="stylesheet" href="../styles/app-prod.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="font-sans h-screen flex overflow-hidden p-3 bg-[#FBF3F1]">
+    <div class="flex justify-between w-full ">
+
+      <div
+        class="w-full bg-white overflow-hidden rounded-3xl flex flex-col relative px-20 py-12 overflow-y-auto"
+      >
+      <div class="flex flex-col justify-start h-full gap-40">
+  
+        <div class="flex items-center justify-between w-full">
+          <a href="../index.html">
+            <img
+              src="../assets/align_full_logo.svg"
+              alt="Align Logo"
+              class="h-8 lg:h-10"
+            />
+          </a>
+          <a
+            href="../dashboard/dashboard.html"
+            class="text-cocoa font-medium text-sm lg:text-base hover:underline"
+            >Skip</a
+          >
+        </div>
+  
+        <div class="w-full relative">
+          <!-- Sign In View -->
+          <div id="sign-in-view" class="w-full absolute top-0 left-0 transition-all duration-500 ease-in-out">
+            <h1 class="text-3xl sm:text-4xl font-header text-cocoa mb-4">
+              Welcome back!
+            </h1>
+            <p
+              class="text-ash text-sm sm:text-base mb-8 text-pretty leading-relaxed"
+            >
+              Present ac nunc eleifend, maximus nunc id, sollicitudin enim.
+              Phasellus posuere turpis sed sem semper sodales. In hac habitasse.
+            </p>
+    
+            <form id="sign-in-form" class="space-y-6">
+              <div>
+                <label
+                  for="phone"
+                  class="block text-sm font-semibold text-cocoa mb-2"
+                  >Phone Number</label
+                >
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  required
+                  maxlength="10"
+                  inputmode="numeric"
+                  placeholder="999 999 9999"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors text-cocoa placeholder-gray-400"
+                />
+                <p id="phone-error" class="hidden text-red-500 text-sm mt-1">Please enter a valid 10-digit number</p>
+              </div>
+    
+              <button
+                type="submit"
+                id="send-otp-btn"
+                class="w-full bg-[#8E9868] text-white font-medium py-3.5 rounded-full hover:bg-[#c4c8bc] transition-colors uppercase tracking-wide"
+              >
+                Send OTP
+              </button>
+            </form>
+    
+            <p class="mt-6 text-sm text-ash text-center sm:text-left">
+              Didn't have an account?
+              <a href="./sign-up.html" class="text-[#8B9D83] font-medium hover:underline"
+                >Sign Up Now</a
+              >
+            </p>
+          </div>
+ 
+          <!-- OTP View -->
+          <div id="otp-view" class="w-full absolute top-0 left-0 translate-x-full opacity-0 pointer-events-none transition-all duration-500 ease-in-out">
+            <h1 class="text-3xl sm:text-4xl font-header text-cocoa mb-2">
+              Enter the code
+            </h1>
+            <p
+              class="text-ash text-sm sm:text-base mb-8 text-pretty leading-relaxed"
+            >
+              We sent verification code to <span id="display-phone" class="font-semibold text-cocoa"></span>
+            </p>
+    
+            <form id="otp-form" class="space-y-8">
+             <div class="flex justify-start gap-2 sm:gap-4">
+                <input class="w-20 sm:w-20 h-20 sm:h-20 text-center text-xl border border-black/25 rounded-2xl focus:border-primary focus:ring-1 focus:ring-primary outline-none" type="text" maxlength="1" pattern="[0-9]" inputmode="numeric" required />
+                <input class="w-20 sm:w-20 h-20 sm:h-20 text-center text-xl border border-black/25 rounded-2xl focus:border-primary focus:ring-1 focus:ring-primary outline-none" type="text" maxlength="1" pattern="[0-9]" inputmode="numeric" required />
+                <input class="w-20 sm:w-20 h-20 sm:h-20 text-center text-xl border border-black/25 rounded-2xl focus:border-primary focus:ring-1 focus:ring-primary outline-none" type="text" maxlength="1" pattern="[0-9]" inputmode="numeric" required />
+                <input class="w-20 sm:w-20 h-20 sm:h-20 text-center text-xl border border-black/25 rounded-2xl focus:border-primary focus:ring-1 focus:ring-primary outline-none" type="text" maxlength="1" pattern="[0-9]" inputmode="numeric" required />
+                <input class="w-20 sm:w-20 h-20 sm:h-20 text-center text-xl border border-black/25 rounded-2xl focus:border-primary focus:ring-1 focus:ring-primary outline-none" type="text" maxlength="1" pattern="[0-9]" inputmode="numeric" required />
+                <input class="w-20 sm:w-20 h-20 sm:h-20 text-center text-xl border border-black/25 rounded-2xl focus:border-primary focus:ring-1 focus:ring-primary outline-none" type="text" maxlength="1" pattern="[0-9]" inputmode="numeric" required />
+              </div>
+              <p id="otp-error" class="hidden text-red-500 text-sm mt-1 text-center w-full">Please enter the complete 6-digit code</p>
+    
+              <button
+                type="submit"
+                id="verify-btn"
+                class="w-full bg-[#8E9868] text-white font-medium py-3.5 rounded-full hover:bg-[#c4c8bc] transition-colors uppercase tracking-wide"
+              >
+                Verify
+              </button> 
+            </form>
+    
+            <p class="mt-6 text-sm text-ash text-center sm:text-left">
+              Didn't have an account?
+              <a href="./sign-up.html" class="text-[#8B9D83] font-medium hover:underline"
+                >Sign Up Now</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const signInForm = document.getElementById('sign-in-form');
+            const otpForm = document.getElementById('otp-form');
+            const signInView = document.getElementById('sign-in-view');
+            const otpView = document.getElementById('otp-view');
+            const phoneInput = document.getElementById('phone');
+            const displayPhone = document.getElementById('display-phone');
+            const otpInputs = otpForm.querySelectorAll('input');
+            const phoneError = document.getElementById('phone-error');
+            const otpError = document.getElementById('otp-error');
+
+            // Phone Input Validation
+            phoneInput.addEventListener('input', (e) => {
+              // Allow only numbers
+              e.target.value = e.target.value.replace(/[^0-9]/g, '');
+              
+              // Clear error on input
+              if (phoneError.classList.contains('hidden') === false) {
+                  phoneError.classList.add('hidden');
+                  phoneInput.classList.remove('border-red-500');
+                  phoneInput.classList.add('border-gray-300');
+              }
+            });
+
+            // Handle Sign In Submit
+            signInForm.addEventListener('submit', (e) => {
+              e.preventDefault();
+              const phone = phoneInput.value;
+              
+              if (phone.length === 10) {
+                displayPhone.textContent = phone;
+                
+                // Animate to OTP view
+                signInView.classList.add('-translate-x-full', 'opacity-0', 'pointer-events-none');
+                otpView.classList.remove('translate-x-full', 'opacity-0', 'pointer-events-none');
+                
+                // Focus first OTP input
+                setTimeout(() => otpInputs[0].focus(), 500);
+              } else {
+                // Show Error
+                phoneError.classList.remove('hidden');
+                phoneInput.classList.remove('border-gray-300');
+                phoneInput.classList.add('border-red-500');
+              }
+            });
+
+            // Handle OTP Inputs
+            otpInputs.forEach((input, index) => {
+              input.addEventListener('input', (e) => {
+                // Allow only numbers
+                e.target.value = e.target.value.replace(/[^0-9]/g, '');
+
+                // Clear error
+                if (otpError.classList.contains('hidden') === false) {
+                    otpError.classList.add('hidden');
+                    otpInputs.forEach(i => {
+                        i.classList.remove('border-red-500');
+                        i.classList.add('border-black/25');
+                    });
+                }
+
+                if (e.target.value.length === 1) {
+                  if (index < otpInputs.length - 1) {
+                    otpInputs[index + 1].focus();
+                  }
+                }
+              });
+
+              input.addEventListener('keydown', (e) => {
+                if (e.key === 'Backspace' && !e.target.value && index > 0) {
+                  otpInputs[index - 1].focus();
+                }
+              });
+              
+              // Allow pasting complete code
+              input.addEventListener('paste', (e) => {
+                e.preventDefault();
+                const text = (e.clipboardData || window.clipboardData).getData('text').replace(/[^0-9]/g, '');
+                if (!text) return;
+                
+                const chars = text.split('').slice(0, 6);
+                chars.forEach((char, i) => {
+                  if (otpInputs[i]) otpInputs[i].value = char;
+                });
+                if (otpInputs[Math.min(chars.length, 5)]) otpInputs[Math.min(chars.length, 5)].focus();
+                
+                // Clear error on paste
+                 if (otpError.classList.contains('hidden') === false) {
+                    otpError.classList.add('hidden');
+                     otpInputs.forEach(i => {
+                        i.classList.remove('border-red-500');
+                        i.classList.add('border-black/25');
+                    });
+                }
+              });
+            });
+
+            // Handle OTP Verify
+            otpForm.addEventListener('submit', (e) => {
+              e.preventDefault();
+              // Check if all inputs are filled
+              const otp = Array.from(otpInputs).map(input => input.value).join('');
+              if (otp.length === 6) {
+                // Navigate to dashboard
+                window.location.href = '../dashboard/dashboard.html';
+              } else {
+                 // Show Error
+                 otpError.classList.remove('hidden');
+                 otpInputs.forEach(input => {
+                     // Optionally highlight only empty ones, but highlighting all is safer for "invalid code" feel
+                     input.classList.remove('border-black/25');
+                     input.classList.add('border-red-500');
+                 });
+              }
+            });
+          });
+        </script>
+      </div>
+      </div>
+  
+      <div
+        class="hidden lg:flex w-full relative items-center justify-center p-12"
+      >
+  
+        <div class="w-full max-w-lg text-center carousel-container">
+          <div
+            class="carousel-slides relative h-[600px] w-full flex items-center justify-center"
+          >
+            <div
+              class="carousel-slide absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-500 opacity-100 z-10"
+              data-index="0"
+            >
+              <div class="mb-8 relative">
+                <img
+                  src="../assets/sign-slider-image-1.png"
+                  alt="Wellness Illustration"
+                  class="w-full max-w-sm mx-auto object-contain"
+                />
+              </div>
+              <h2 class="text-3xl lg:text-4xl font-header text-cocoa mb-4">
+                <span class="text-[#A855F7] block mb-2">Empower</span> Your
+                Wellness Journey.
+              </h2>
+              <p class="text-ash text-sm lg:text-base max-w-xs mx-auto">
+                Unlike many apps in this space, our mission is rooted in real
+                women's health, not guesswork.
+              </p>
+            </div>
+  
+            <div
+              class="carousel-slide absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-500 opacity-0 z-0"
+              data-index="1"
+            >
+              <div class="mb-8 relative">
+                <img
+                  src="../assets/sign-slider-image-2.png"
+                  alt="Tracking Illustration"
+                  class="w-full max-w-sm mx-auto object-contain"
+                />
+              </div>
+              <h2 class="text-3xl lg:text-4xl font-header text-cocoa mb-4">
+                <span class="text-[#A855F7] block mb-2">Track</span> Your Cycle
+                Daily.
+              </h2>
+              <p class="text-ash text-sm lg:text-base max-w-xs mx-auto">
+                Stay in sync with your body and understand your unique rhythm with
+                ease.
+              </p>
+            </div>
+  
+            <div
+              class="carousel-slide absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-500 opacity-0 z-0"
+              data-index="2"
+            >
+              <div class="mb-8 relative">
+                <img
+                  src="../assets/sign-slider-image-3.png"
+                  alt="Community Illustration"
+                  class="w-full max-w-sm mx-auto object-contain"
+                />
+              </div>
+              <h2 class="text-3xl lg:text-4xl font-header text-cocoa mb-4">
+                <span class="text-[#A855F7] block mb-2">Join</span> Our Community.
+              </h2>
+              <p class="text-ash text-sm lg:text-base max-w-xs mx-auto">
+                Connect with thousands of women on the same journey as you.
+              </p>
+            </div>
+            <div
+              class="carousel-slide absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-500 opacity-0 z-0"
+              data-index="2"
+            >
+              <div class="mb-8 relative">
+                <img
+                  src="../assets/sign-slider-image-4.png"
+                  alt="Community Illustration"
+                  class="w-full max-w-sm mx-auto object-contain"
+                />
+              </div>
+              <h2 class="text-3xl lg:text-4xl font-header text-cocoa mb-4">
+                <span class="text-[#A855F7] block mb-2">Join</span> Our Community.
+                4
+              </h2>
+              <p class="text-ash text-sm lg:text-base max-w-xs mx-auto">
+                Connect with thousands of women on the same journey as you.
+              </p>
+            </div>
+          </div>
+  
+          <div class="flex justify-center gap-2 mt-8">
+            <button
+              class="carousel-dot w-10 h-2 rounded-full bg-cocoa transition-all duration-300"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              class="carousel-dot w-10 h-2 rounded-full bg-white hover:bg-gray-400 transition-all duration-300"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              class="carousel-dot w-10 h-2 rounded-full bg-white hover:bg-gray-400 transition-all duration-300"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              class="carousel-dot w-10 h-2 rounded-full bg-white hover:bg-gray-400 transition-all duration-300"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../scripts/lib/gsap.min.js"></script>
+    <script src="../scripts/core.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        if (typeof initAuthCarousel === "function") {
+          initAuthCarousel();
+        }
+      });
+    </script>
+  </body>
+</html>

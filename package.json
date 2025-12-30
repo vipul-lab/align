@@ -5,9 +5,11 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build:js": "webpack --mode=development",
         "build:css": "npx @tailwindcss/cli -i ./src/css/styles.css -o ./public/assets/css/styles.css",
+        "build:css:admin": "npx @tailwindcss/cli -i ./src/css/web.css -o ./public/assets/css/web.css",
         "build:css:watch": "npx @tailwindcss/cli -i ./src/css/styles.css -o ./public/assets/css/styles.css --watch",
+        "build:css:admin:watch": "npx @tailwindcss/cli -i ./src/css/web.css -o ./public/assets/css/web.css --watch",
         "build:prod": "npm run build:css && npm run build:css:admin && npx webpack --env production",
-        "build": "npm run build:css && npm run build:js && vite build --mode=development",
+        "build": "npm run build:css && npm run build:css:admin && npm run build:js && vite build --mode=development",
         "lint": "npx eslint src/core --ext .ts",
         "dev": "vite"
     },

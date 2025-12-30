@@ -1,0 +1,792 @@
+@extends('website.layout.app')
+@section('content')
+
+
+
+
+
+
+    <main
+      class="max-w-7xl mx-auto px-4 lg:px-0 py-6 sm:pt-6 sm:pb-[60px] space-y-[60px]"
+    >
+      <section
+        class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between px-6 lg:px-8 gap-4 mt-10"
+      >
+        <!-- LEFT CONTENT -->
+        <div
+          class="flex flex-col max-w-[465px] text-center lg:text-left mx-auto lg:mx-0"
+        >
+          <div
+            class="flex items-center justify-center lg:justify-start gap-2 text-sm"
+          >
+            <div
+              class="px-2 py-1 rounded-full bg-cocoa text-white flex items-center gap-1"
+            >
+              <img src="assets/images/web/star-icon.svg" alt="Star Icon" />
+              <span> 4.9 Rated</span>
+            </div>
+            <span>By Satisfied Customers</span>
+          </div>
+
+          <h1
+            class="mt-6 font-header text-[36px] sm:text-[44px] lg:text-[47px] leading-[110%] tracking-[-1px]"
+            data-split="lines"
+          >
+            Cycle Syncing App Proven To Make Life Better. Automate Your
+            Happiness.
+          </h1>
+
+          <p
+            class="mt-6 leading-[150%] text-ash max-w-[407px] mx-auto lg:mx-0"
+            data-split="lines"
+          >
+            Imagine an app that syncs with your energy, hormones, and health —
+            and with one click, gives you the perfect meals and activities
+            tailored to your cycle.
+          </p>
+
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 mt-10"
+          >
+            <a
+              href="#"
+              class="px-4 py-3 rounded-full bg-primary font-semibold text-white inline-block tracking-[-0.5px] hover:bg-primary/90 transition"
+            >
+              Get Started $500
+            </a>
+            <p class="text-cocoa font-medium text-sm">
+              50% OFF Founding Member Rate
+            </p>
+          </div>
+
+          <ul class="mt-10 flex justify-center lg:justify-start gap-3">
+            <li class="w-[120px] sm:w-[135px]">
+              <img
+                src="assets/images/web/app-store.webp"
+                class="w-full"
+                alt="Apple app store"
+              />
+            </li>
+            <li class="w-[120px] sm:w-[135px]">
+              <img
+                src="assets/images/web/google-play.webp"
+                class="w-full"
+                alt="Android app store"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <!-- RIGHT CONTENT GRID -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-[minmax(448px,1fr)_320px] gap-6 w-full max-w-[800px] mx-auto lg:mx-0"
+          data-reveal-init
+        >
+          <!-- Left Image -->
+          <div class="rounded-4xl overflow-hidden row-span-full">
+            <img
+              src="assets/images/web/center-image.webp"
+              class="w-full h-full object-cover"
+              alt="Log Period"
+              data-reveal
+              decoding="async"
+            />
+          </div>
+
+          <!-- Sidebar Content -->
+          <div class="flex flex-col justify-between text-center md:text-left">
+            <div class="mb-12">
+              <h2
+                class="font-header text-3xl sm:text-4xl tracking-[-0.5px] leading-tight"
+                data-split="lines"
+              >
+                <span class="text-5xl sm:text-6xl block">100%</span>
+                Women Owned
+              </h2>
+              <p class="mt-3 leading-[145%] text-ash" data-split="lines">
+                Co-Founded By Award Winning Women's Health ND.
+              </p>
+
+              <div class="mt-6 flex justify-center md:justify-start">
+                <a
+                  href="#"
+                  class="flex items-center gap-2 text-primary font-semibold uppercase hover:underline"
+                >
+                  <span>
+                    <img src="assets/images/web/play-icon.svg" alt="Play Icon" />
+                  </span>
+                  <span>How We Work</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Bottom Image -->
+            <div class="rounded-4xl overflow-hidden mt-8 md:mt-auto">
+              <img
+                src="assets/images/web/right-image.webp"
+                class="w-full h-full object-cover"
+                alt="Hero Image"
+                data-reveal
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center">
+        <h2
+          class="text-3xl -tracking-tight text-pretty font-header text-cocoa sm:text-[56px] mb-15"
+          data-split="lines"
+        >
+          Headline Goes Here
+        </h2>
+
+        <div
+          class="aspect-video relative w-full max-w-[1000px] mx-auto mb-20"
+          data-rotate
+        >
+          <video
+            src="assets/images/web/media/demo-video-home-page.webm"
+            poster="./assets/poster-image-video.webp"
+            class="w-full h-full mx-auto object-cover rounded-4xl shadow-[0_6px_100px_rgba(0,0,0,0.15)]"
+            playsinline
+            muted
+            loop
+            data-media-play
+          ></video>
+
+          <!-- Play / Pause Overlay Button -->
+          <div
+            class="absolute inset-0 h-full flex items-center justify-center z-10 cursor-pointer video-overlay"
+          >
+            <div
+              class="play-button transition-opacit y duration-500 ease-in-out"
+            >
+              <svg
+                class="w-20 h-20 md:w-28 md:h-28 text-white drop-shadow-2xl"
+                viewBox="0 0 80 80"
+                fill="currentColor"
+              >
+                <circle cx="40" cy="40" r="38" fill="white" opacity="0.25" />
+                <path d="M32 25 L32 55 L56 40 Z" fill="white" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="text-ash leading-[135%]" data-split="lines">
+            Be the first to try Align Daily & transform the way you feel
+          </p>
+          <a
+            href="#"
+            class="px-8 py-3 rounded-full bg-primary font-semibold text-white mt-6 uppercase inline-block tracking-[-2%]"
+            >Join Waitlist</a
+          >
+          <div
+            class="text-center flex flex-col items-center justify-center mt-10"
+          >
+            <div
+              class="isolate flex -space-x-2 overflow-hidden py-2"
+              data-stagger
+            >
+              <img
+                src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+                class="relative z-30 inline-block size-10 rounded-full ring-2 ring-white outline -outline-offset-1 outline-black/5"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+                class="relative z-20 inline-block size-10 rounded-full ring-2 ring-white outline -outline-offset-1 outline-black/5"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
+                alt=""
+                class="relative z-10 inline-block size-10 rounded-full ring-2 ring-white outline -outline-offset-1 outline-black/5"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt=""
+                class="relative z-0 inline-block size-10 rounded-full ring-2 ring-white outline -outline-offset-1 outline-black/5"
+              />
+            </div>
+            <p
+              class="font-medium text-sm leading-[135%] mt-1"
+              data-split="lines"
+            >
+              <span class="text-primary font-extrabold">300+</span> Women have
+              trusted Align Daily
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="max-w-[1080px] mx-auto px-4 sm:px-6 lg:px-8">
+        <h2
+          class="text-3xl sm:text-5xl lg:text-[56px] text-center font-header text-cocoa tracking-tight leading-tight"
+          data-split="lines"
+        >
+          What can you do with Align
+        </h2>
+
+        <!-- ROW 1 -->
+        <div
+          class="flex flex-col lg:flex-row flex-wrap gap-6 mt-10 lg:mt-[60px]"
+          data-stagger
+        >
+          <!-- Card 1 -->
+          <div
+            class="flex-1 justify-between min-w-[280px] max-w-full lg:max-w-[428px] bg-mint rounded-3xl flex flex-col relative overflow-hidden"
+          >
+            <div class="p-6 sm:p-8 space-y-4 sm:space-y-6">
+              <h3 class="text-2xl sm:text-[28px]/[120%] font-medium text-cocoa">
+                Track Your Cycle and Symptoms
+              </h3>
+              <p class="text-ash leading-[150%] text-sm sm:text-base">
+                Figure out what\'s trending in your body with our period and
+                cycle tracker. Spot patterns in your symptoms and know when your
+                period is likely to start so you’re always prepared.
+              </p>
+            </div>
+            <img
+              src="assets/images/web/track-cycle-image.webp"
+              decoding="async"
+              class="w-full p-3"
+              alt="Track Your Cycle and Symptoms"
+            />
+          </div>
+
+          <!-- Right Column (Card 2 + Card 3 stacked) -->
+          <div class="flex flex-col flex-1 gap-6 text-white w-full">
+            <!-- Card 2 -->
+            <div
+              class="p-6 sm:p-8 bg-[#23234E] rounded-3xl flex flex-col flex-1 space-y-6"
+            >
+              <h3 class="text-2xl sm:text-[28px]/[120%] font-medium">
+                Understand your fertility better
+              </h3>
+              <p class="leading-[150%] text-sm sm:text-base">
+                See your chance of pregnancy in seconds from our intelligent
+                tracking tools, and learn how to read your body’s fertility
+                signals so you can stay informed & prepared.
+              </p>
+
+              <!-- Mini Cards Grid -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 mt-auto">
+                <!-- Each mini card -->
+                <div
+                  class="flex flex-col bg-glass-2 rounded-[20px] border border-white p-2 text-white/80 min-h-[120px]"
+                >
+                  <div class="flex">
+                    <img src="assets/images/web/symptoms-icon.svg" alt="symptoms icon" />
+                    <div class="flex items-center gap-1 ml-auto text-xs">
+                      <svg
+                        width="12"
+                        height="9"
+                        viewBox="0 0 12 9"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.81353 7.10067L0.968732 4.30201L0 5.24832L3.81353 9L12 0.946309L11.0381 0L3.81353 7.10067Z"
+                          fill="white"
+                        />
+                      </svg>
+
+                      <span>Added</span>
+                    </div>
+                  </div>
+                  <p class="mt-auto font-bold text-sm">
+                    Your Log<br />Symptoms
+                  </p>
+                </div>
+
+                <div
+                  class="flex flex-col bg-glass-2 rounded-[20px] border border-white p-2 text-white/80 min-h-[120px]"
+                >
+                  <div class="flex">
+                    <img
+                      src="assets/images/web/recycle-small-icon.svg"
+                      alt="recycle icon"
+                    />
+                    <div class="flex items-center gap-1 ml-auto text-xs">
+                      <span>+3 miles</span>
+                    </div>
+                  </div>
+                  <p class="mt-auto font-bold text-sm">
+                    <span class="font-normal text-xs">Total Steps</span
+                    ><br />4510
+                  </p>
+                </div>
+
+                <div
+                  class="flex flex-col bg-glass-2 rounded-[20px] border border-white p-2 text-white/80 min-h-[120px]"
+                >
+                  <div class="flex items-center">
+                    <img
+                      src="assets/images/web/person-walking-icon.svg"
+                      alt="person walking icon"
+                    />
+                    <div
+                      class="flex items-center text-white gap-1 ml-auto text-[10px] font-semibold rounded-full px-2 py-0.5 bg-success"
+                    >
+                      Normal
+                    </div>
+                  </div>
+                  <p class="mt-auto font-bold text-sm">
+                    <span class="font-normal text-xs">Cycle Length</span
+                    ><br />28 days
+                  </p>
+                </div>
+
+                <div
+                  class="flex flex-col bg-glass-2 rounded-[20px] border border-white p-2 text-white/80 min-h-[120px]"
+                >
+                  <div class="flex items-center">
+                    <img src="assets/images/web/temp-icon.svg" alt="temperature icon" />
+                    <div
+                      class="flex items-center text-white gap-1 ml-auto text-[10px] font-semibold rounded-full px-3 py-0.5 bg-danger"
+                    >
+                      High
+                    </div>
+                  </div>
+                  <p class="mt-auto font-bold text-sm">
+                    <span class="font-normal text-xs">Basel Body Temp</span
+                    ><br />101° F
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="flex flex-col sm:flex-row flex-wrap items-center rounded-3xl bg-sea overflow-hidden"
+              data-stagger
+            >
+              <div class="p-6 sm:p-8 space-y-4 sm:space-y-6 flex-1">
+                <h3
+                  class="text-2xl sm:text-[28px]/[120%] font-medium text-cocoa"
+                >
+                  Personalized Meals & Activities
+                </h3>
+                <p class="text-ash leading-[150%] text-sm sm:text-base">
+                  We share more than just ingredients. We share detailed recipes
+                  where you can add the ingredients straight to your grocery
+                  list.
+                </p>
+              </div>
+              <div
+                class="flex flex-col max-w-[200px] pr-3 sm:max-w-[266px] w-full sm:w-auto"
+              >
+                <img
+                  src="assets/images/web/meals-activities-image.webp"
+                  decoding="async"
+                  class="w-full"
+                  alt="Activities"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ROW 2 -->
+        <div class="flex flex-col lg:flex-row flex-wrap gap-6 mt-6">
+          <!-- Card 4 -->
+
+          <div
+            data-stagger
+            class="flex-1 bg-yellow rounded-3xl flex flex-col sm:flex-row items-center overflow-hidden"
+          >
+            <div class="p-6 sm:py-8 sm:pl-8 space-y-4 sm:space-y-6 flex-1">
+              <h3 class="text-2xl sm:text-[28px]/[120%] font-medium text-cocoa">
+                No Period? No Problem.
+              </h3>
+              <p class="text-ash leading-[150%] text-sm sm:text-base">
+                Utilize our features with follicular & luteal cycling to assist
+                with tracking cyclical supplement cycles and seed cycling,
+                making habits easy.
+              </p>
+            </div>
+            <img
+              src="assets/images/web/no-period-image.webp"
+              decoding="async"
+              class="max-w-[180px] sm:max-w-[220px] mt-4 sm:mt-0 pr-3"
+              alt="No Period? No Problem."
+            />
+          </div>
+
+          <!-- Card 5 -->
+          <div
+            class="flex-1 bg-pinky rounded-3xl flex flex-col justify-between overflow-hidden"
+            data-stagger
+          >
+            <div class="p-6 sm:p-8 space-y-4 sm:space-y-6">
+              <h3
+                class="text-2xl sm:text-[28px]/[120%] font-medium text-cocoa tracking-[-1px]"
+              >
+                Cyclical Supplement Tracking
+              </h3>
+              <p class="text-ash leading-[150%] text-sm sm:text-base">
+                Track supplements tied to specific days of your cycle — for
+                example, day 1–14 only.
+              </p>
+            </div>
+            <img
+              src="assets/images/web/cyclical-image.webp"
+              decoding="async"
+              class="px-4 pb-4 w-full max-w-[360px] ml-auto"
+              alt="Cyclical Supplement Tracking"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="px-6 lg:px-8" aria-labelledby="features-heading">
+        <div
+          class="relative bg-beige-100 rounded-4xl max-w-7xl mx-auto p-4 flex"
+        >
+          <div
+            data-reveal-init
+            class="overflow-hidden lg:w-1/2 rounded-[30px] max-w-[537px]"
+          >
+            <img
+              data-reveal
+              src="assets/images/web/membership.webp"
+              decoding="async"
+              alt="Black leather journal with silver steel disc binding resting on wooden shelf with machined steel pen."
+              class="h-full w-full object-cover"
+              data-reveal
+            />
+          </div>
+
+          <div
+            class="px-4 pt-16 pb-24 sm:px-6 sm:pb-32 flex-1 lg:gap-x-8 lg:px-8 lg:pt-32"
+          >
+            <div class="lg:col-start-2">
+              <h2
+                id="features-heading"
+                class="text-3xl -tracking-tight text-pretty font-header text-cocoa sm:text-[56px]"
+              >
+                <span class="font-extrabold">FREE</span><br />
+                Lifetime Membership
+              </h2>
+              <p class="mt-4.5 text-base/[135%] text-ash">
+                Invite 10 New Members receive a lifetime membership & Bonuses
+              </p>
+
+              <dl class="mt-10 grid grid-cols-1 gap-2 text-sm sm:grid-cols-2">
+                <div
+                  class="bg-glass p-4 rounded-[20px] space-y-4 border border-white/60"
+                >
+                  <dt
+                    class="bg-white shadow-icon size-9 flex items-center justify-center rounded-[10px]"
+                  >
+                    <img src="assets/images/web/calendar-icon.svg" alt="Calendar" />
+                  </dt>
+                  <dd class="mt-2 text-lg/[120%] text-cocoa">
+                    1:1 session with our Chief medical Officer
+                  </dd>
+                </div>
+                <div
+                  class="bg-glass p-4 rounded-[20px] space-y-4 border border-white/60"
+                >
+                  <dt
+                    class="bg-white shadow-icon size-9 flex items-center justify-center rounded-[10px]"
+                  >
+                    <img
+                      src="assets/images/web/person-heart-icon.svg"
+                      alt="Person Heart"
+                    />
+                  </dt>
+                  <dd class="mt-2 text-lg/[120%] text-cocoa">
+                    1:1 Personal Coaching Session w. Founder Alanna Nicolini
+                  </dd>
+                </div>
+                <div
+                  class="bg-glass p-4 rounded-[20px] space-y-4 border border-white/60"
+                >
+                  <dt
+                    class="bg-white shadow-icon size-9 flex items-center justify-center rounded-[10px]"
+                  >
+                    <img src="assets/images/web/recycle-icon.svg" alt="Recycle" />
+                  </dt>
+                  <dd class="mt-2 text-lg/[120%] text-cocoa">
+                    Discounted Tickets To Our Yearly Wellness Retreats
+                  </dd>
+                </div>
+                <div
+                  class="bg-glass p-4 rounded-[20px] space-y-4 border border-white/60"
+                >
+                  <dt
+                    class="bg-white shadow-icon size-9 flex items-center justify-center rounded-[10px]"
+                  >
+                    <img
+                      src="assets/images/web/upper-performance-icon.svg"
+                      alt="Upper Performance"
+                    />
+                  </dt>
+                  <dd class="mt-2 text-lg/[120%] text-cocoa">
+                    Offer 30% Discount toyour friends
+                  </dd>
+                </div>
+              </dl>
+              <a
+                href="#"
+                class="px-8 py-3 rounded-full bg-primary font-semibold text-white mt-11 uppercase inline-block tracking-[-2%]"
+                >Send Link Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-center space-y-[60px] px-6 lg:px-8">
+        <h2
+          class="text-3xl -tracking-tight text-pretty font-header text-cocoa sm:text-[56px]"
+          data-split="lines"
+        >
+          Features you didn’t know you needed
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-6 gap-4" data-stagger>
+          <article
+            class="p-[48px] bg-glass border border-white rounded-[20px] col-span-3"
+          >
+            <div
+              class="size-[80px] bg-white/60 shadow-icon rounded-[22px] flex items-center justify-center mx-auto"
+            >
+              <img src="assets/images/web/checklist-icon.svg" alt="Checklist" />
+            </div>
+            <h3 class="mt-[32px] text-[32px]/[33.6px] font-header text-cocoa">
+              Smart Recipes with Grocery List Integration
+            </h3>
+            <p class="mt-4.5 text-base/[27.2px] text-ash">
+              Explore nourishing recipes with full ingredient lists—add them
+              straight to your grocery list in one tap.
+            </p>
+          </article>
+
+          <article
+            class="p-[48px] bg-glass border border-white rounded-[20px] col-span-3"
+          >
+            <div
+              class="size-[80px] bg-white/60 shadow-icon rounded-[22px] flex items-center justify-center mx-auto"
+            >
+              <img src="assets/images/web/pill-icon.svg" alt="Pill" />
+            </div>
+            <h3 class="mt-[32px] text-[32px]/[33.6px] font-header text-cocoa">
+              Cyclical Supplement Tracking
+            </h3>
+            <p class="mt-4.5 text-base/[27.2px] text-ash">
+              Track your supplements in sync with your menstrual or moon
+              phase—never miss a beat in your routine again.
+            </p>
+          </article>
+
+          <article
+            class="p-[48px] bg-glass border border-white rounded-[20px] col-span-2"
+          >
+            <div
+              class="size-[80px] bg-white/60 shadow-icon rounded-[22px] flex items-center justify-center mx-auto"
+            >
+              <img src="assets/images/web/community-icon.svg" alt="Community" />
+            </div>
+            <h3 class="mt-[32px] text-[32px]/[33.6px] font-header text-cocoa">
+              Guided Wellness Community
+            </h3>
+            <p class="mt-4.5 text-base/[27.2px] text-ash">
+              Your chance to be part of a private, supportive community of women
+              with monthly challenges, expert Q&As, and cycle-synced
+              conversations.
+            </p>
+          </article>
+
+          <article
+            class="p-[48px] bg-glass border border-white rounded-[20px] col-span-2"
+          >
+            <div
+              class="size-[80px] bg-white/60 shadow-icon rounded-[22px] flex items-center justify-center mx-auto"
+            >
+              <img src="assets/images/web/dumble-icon.svg" alt="Dumble" />
+            </div>
+            <h3 class="mt-[32px] text-[32px]/[33.6px] font-header text-cocoa">
+              Workouts + Expert Connection
+            </h3>
+            <p class="mt-4.5 text-base/[27.2px] text-ash">
+              Access detailed workouts and connect with certified personal
+              trainers, MDs, and nutrition coaches—all in one place.
+            </p>
+          </article>
+
+          <article
+            class="p-[48px] bg-glass border border-white rounded-[20px] col-span-2"
+          >
+            <div
+              class="size-[80px] bg-white/60 shadow-icon rounded-[22px] flex items-center justify-center mx-auto"
+            >
+              <img src="assets/images/web/recycle-drop-icon.svg" alt="Track" />
+            </div>
+            <h3 class="mt-[32px] text-[32px]/[33.6px] font-header text-cocoa">
+              Track to the New Moon
+            </h3>
+            <p class="mt-4.5 text-base/[27.2px] text-ash">
+              Align your cycle with the lunar phases and tap into ancient wisdom
+              for modern wellness.
+            </p>
+          </article>
+        </div>
+        <a
+          href="#"
+          class="px-8 py-3 rounded-full bg-primary font-semibold text-white mt-11 uppercase inline-block tracking-[-2%]"
+          >JOIN WAITLIST</a
+        >
+      </section>
+      <section>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <div class="lg:flex lg:gap-[130px]">
+            <div class="max-w-[407px] flex-1">
+              <h2
+                class="text-4xl -tracking-tight text-pretty font-header text-cocoa sm:text-[56px]"
+              >
+                Your Questions Answered
+              </h2>
+              <p class="mt-8 text-base/[135%] text-pretty text-ash">
+                Everything You Need to Know Before Starting Your Journey
+              </p>
+            </div>
+            <div class="mt-10 lg:mt-0">
+              <ol class="space-y-6 divide-y divide-[#6c6c6c]" data-stagger>
+                <li
+                  class="faq-item py-6 px-8 flex gap-2  border-b border-black-100  cursor-pointer overflow-hidden"
+                >
+                  <span class="leading-[33.3px] font-header">1.</span>
+                  <div class="w-full">
+                    <dt
+                      class="faq-question text-2xl/[33.6px] font-header text-cocoa"
+                    >
+                      Do I need to have a regular period to use the app?
+                    </dt>
+                    <div class="faq-answer">
+                      <dd class="pt-[23px] text-base/[27.2px] text-ash">
+                        Nope! Whether you’re irregular, coming off birth
+                        control, in peri/post-menopause, or syncing with the
+                        moon, Align meets you where you are.
+                      </dd>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="faq-item py-6 px-8 flex gap-2  border-b border-black-100  cursor-pointer overflow-hidden"
+                >
+                  <span class="leading-[33.3px] font-header">2.</span>
+                  <div class="w-full">
+                    <dt
+                      class="faq-question text-2xl/[33.6px] font-header text-cocoa"
+                    >
+                      What makes Align Daily different from other period
+                      tracking apps?
+                    </dt>
+                    <div class="faq-answer">
+                      <dd class="pt-[23px] text-base/[27.2px] text-ash">
+                        I don&#039;t know, but the flag is a big plus. Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Quas
+                        cupiditate laboriosam fugiat.
+                      </dd>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="faq-item py-6 px-8 flex gap-2  border-b border-black-100  cursor-pointer overflow-hidden"
+                >
+                  <span class="leading-[33.3px] font-header">3.</span>
+                  <div class="w-full">
+                    <dt
+                      class="faq-question text-2xl/[33.6px] font-header text-cocoa"
+                    >
+                      How does the grocery list feature work?
+                    </dt>
+                    <div class="faq-answer">
+                      <dd class="pt-[23px] text-base/[27.2px] text-ash">
+                        Nobody knows. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Quas cupiditate laboriosam fugiat.
+                      </dd>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="faq-item py-6 px-8 flex gap-2  border-b border-black-100  cursor-pointer overflow-hidden"
+                >
+                  <span class="leading-[33.3px] font-header">4.</span>
+                  <div class="w-full">
+                    <dt
+                      class="faq-question text-2xl/[33.6px] font-header text-cocoa"
+                    >
+                      What’s included in the basic version vs. premium?
+                    </dt>
+                    <div class="faq-answer">
+                      <dd class="pt-[23px] text-base/[27.2px] text-ash">
+                        Because they&#039;re so good at it. Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Quas cupiditate
+                        laboriosam fugiat.
+                      </dd>
+                    </div>
+                  </div>
+                </li>
+                <li
+                  class="faq-item py-6 px-8 flex gap-2  border-b border-black-100  cursor-pointer overflow-hidden"
+                >
+                  <span class="leading-[33.3px] font-header">5.</span>
+                  <div class="w-full">
+                    <dt
+                      class="faq-question text-2xl/[33.6px] font-header text-cocoa"
+                    >
+                      Can I use Align Daily if I’m on hormonal birth control?
+                    </dt>
+                    <div class="faq-answer">
+                      <dd class="pt-[23px] text-base/[27.2px] text-ash">
+                        Because they&#039;re so good at it. Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Quas cupiditate
+                        laboriosam fugiat.
+                      </dd>
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-12 px-6 lg:px-8" data-rotate>
+        <div class="flex items-center justify-center relative min-h-[537px]">
+          <img
+            src="assets/images/web/cta-image.webp"
+            class="rounded-4xl absolute inset-0 w-full h-full object-cover"
+            alt="CTA Image"
+          />
+          <div
+            class="max-w-7xl mx-auto text-center text-white absolute inset-0 flex flex-col items-center justify-center px-6"
+          >
+            <img
+              class="flex max-w-[156px] h-[54px]"
+              src="assets/images/web/align_full_logo_white.svg"
+              alt="Align Full Header Logo"
+              decoding="async"
+            />
+            <h2 class="text-4xl sm:text-6xl mt-6 font-header">
+              World’s Top Women’s Health App
+            </h2>
+            <p
+              class="text-lg sm:text-2xl mt-3 font-light max-w-[638px] mx-auto"
+            >
+              Millions of people³ around the world use the Align app to track
+              their periods, ovulation, and pregnancy.
+            </p>
+            <a
+              href="#"
+              class="px-8 py-3 rounded-full bg-primary font-semibold text-white mt-11 uppercase inline-block tracking-[-2%]"
+              >JOIN WAITLIST</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+@endsection

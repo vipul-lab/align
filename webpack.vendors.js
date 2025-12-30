@@ -113,5 +113,21 @@ module.exports = {
 				bundle: true,
 			}
 		],
+		website: [
+			{
+				src: [
+					'src/images/web',
+				],
+				dist: 'images/web',
+			},
+			{
+				src: [
+					'src/vendors/web/animation.js',
+					'src/vendors/web/core.js',
+				],
+				dist: '/vendors/website.js',
+				bundle: true,
+			},
+		],
 	},
 };
